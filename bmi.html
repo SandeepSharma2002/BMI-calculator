@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bmi.css">
+</head>
+<body>
+    <h3><b>B</b>ody <b>M</b>ass <b>I</b>ndex Calculator</h3>
+    <form class="form ">
+        <select name="" id="unit" class="row-one" required>
+            <option value = "" selected="true" disabled >Select System</option>
+            <option value="Standard" class="op">Standard</option>
+            <option value="Pounds" class="op">Pound</option>
+        </select>
+        <form action="">
+            <div id="Height">
+                <div class="row-two">
+                <span class="text">Height: </span>
+                <div id="textbox" class="container">
+                    <input type="number" class="text-input" name="" id="H1" autocomplete="off" required>
+                    <input type="number" class="text-input" id="H2" autocomplete="off" required>
+                </div>
+            </div>
+                <div class="weight row-three">
+                    <span class="text">Weight: </span>
+                    <div class="container">
+                    <input type="number" class="text-input" id="W" autocomplete="off" required>
+                </div>
+                </div>
+                <div class="row-four">
+                <button type="button" class="submit"  id="btn">Compute BMI</button>
+                <button type="button" class="submit"  id="Reset-btn">Reset</button>
+            </div>
+                <div id="bmibox row-five">
+                    <span class="text">Your BMI: </span>
+                    <input type="number" class="text-input" id="bmi">
+                </div>
+            </div>
+        </form>
+    </form>
+    <script src="bmi.js"></script>
+</body>
+</html>
